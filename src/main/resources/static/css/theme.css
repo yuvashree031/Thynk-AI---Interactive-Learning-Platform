@@ -1,0 +1,619 @@
+/* 🚀 MODERN UI DESIGN - AI LEARNING PLATFORM */
+
+/* Import Modern Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* 🌈 MODERN GRADIENTS */
+.modern-gradient {
+    background: linear-gradient(135deg, #6366F1, #8B5CF6);
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.soft-gradient {
+    background: linear-gradient(135deg, #6366F1, #8B5CF6, #A78BFA);
+    background-size: 300% 300%;
+    animation: softShift 4s ease infinite;
+}
+
+@keyframes softShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🎭 ULTRA-NEUMORPHISM */
+.neu-ultra {
+    background: var(--bg-card);
+    box-shadow: 
+        20px 20px 40px rgba(0, 0, 0, 0.4), 
+        -20px -20px 40px rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.neu-cyber {
+    background: var(--bg-card);
+    box-shadow: 
+        15px 15px 30px rgba(0, 0, 0, 0.3), 
+        -15px -15px 30px rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.1);
+}
+
+/* 🌟 ULTRA-GLASS MORPHISM */
+.glass-ultra {
+    background: rgba(30, 30, 30, 0.4);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-cyber {
+    background: rgba(0, 255, 136, 0.05);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    box-shadow: 
+        0 8px 32px rgba(0, 255, 136, 0.1),
+        inset 0 1px 0 rgba(0, 255, 136, 0.1);
+}
+
+/* 🎨 CYBERPUNK TEXT EFFECTS */
+.cyber-text-3d {
+    color: var(--text-cyber);
+    text-shadow: 
+        0 0 5px var(--text-cyber),
+        0 0 10px var(--text-cyber),
+        0 0 15px var(--text-cyber),
+        0 0 20px var(--text-cyber),
+        0 1px 0 #00cc6a,
+        0 2px 0 #00aa55,
+        0 3px 0 #008844,
+        0 4px 0 #006633;
+    animation: cyberPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes cyberPulse {
+    0% { 
+        text-shadow: 
+            0 0 5px var(--text-cyber),
+            0 0 10px var(--text-cyber),
+            0 0 15px var(--text-cyber);
+    }
+    100% { 
+        text-shadow: 
+            0 0 10px var(--text-cyber),
+            0 0 20px var(--text-cyber),
+            0 0 30px var(--text-cyber);
+    }
+}
+
+.neon-text-3d {
+    color: #ff0080;
+    text-shadow: 
+        0 0 5px #ff0080,
+        0 0 10px #ff0080,
+        0 0 15px #ff0080,
+        0 0 20px #ff0080,
+        0 1px 0 #cc0066,
+        0 2px 0 #aa0055,
+        0 3px 0 #880044,
+        0 4px 0 #660033;
+    animation: neonPulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+    0% { 
+        text-shadow: 
+            0 0 5px #ff0080,
+            0 0 10px #ff0080,
+            0 0 15px #ff0080;
+    }
+    100% { 
+        text-shadow: 
+            0 0 10px #ff0080,
+            0 0 20px #ff0080,
+            0 0 30px #ff0080;
+    }
+}
+
+/* 🎯 ULTRA-BUTTON VARIANTS */
+.btn-cyber-ultra {
+    background: var(--gradient-cyber);
+    color: var(--bg-primary);
+    box-shadow: 
+        0 4px 15px rgba(0, 255, 136, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 136, 0.3);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-cyber-ultra:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 25px rgba(0, 255, 136, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 10px currentColor;
+}
+
+.btn-neon-ultra {
+    background: var(--gradient-neon);
+    color: white;
+    box-shadow: 
+        0 4px 15px rgba(255, 0, 128, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 0, 128, 0.3);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-neon-ultra:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 25px rgba(255, 0, 128, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 10px currentColor;
+}
+
+.btn-hologram {
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-hologram::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-hologram:hover::before {
+    left: 100%;
+}
+
+/* 🎨 ULTRA-CARD VARIANTS */
+.card-cyber {
+    background: var(--bg-glass);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(0, 255, 136, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-cyber::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-cyber);
+    animation: scan 3s linear infinite;
+}
+
+.card-neon {
+    background: var(--bg-glass);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 0, 128, 0.2);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(255, 0, 128, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-neon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-neon);
+    animation: scan 2s linear infinite;
+}
+
+/* 🌟 ULTRA-GLOW EFFECTS */
+.glow-cyber {
+    box-shadow: 
+        0 0 20px rgba(0, 255, 136, 0.3),
+        0 0 40px rgba(0, 255, 136, 0.2),
+        0 0 60px rgba(0, 255, 136, 0.1);
+}
+
+.glow-neon {
+    box-shadow: 
+        0 0 20px rgba(255, 0, 128, 0.3),
+        0 0 40px rgba(255, 0, 128, 0.2),
+        0 0 60px rgba(255, 0, 128, 0.1);
+}
+
+.glow-ultra {
+    box-shadow: 
+        0 0 20px rgba(99, 102, 241, 0.3),
+        0 0 40px rgba(139, 92, 246, 0.2),
+        0 0 60px rgba(6, 182, 212, 0.1);
+}
+
+/* 🎭 ULTRA-HOVER EFFECTS */
+.hover-cyber {
+    transition: all var(--transition-normal);
+}
+
+.hover-cyber:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(0, 255, 136, 0.4);
+    border-color: rgba(0, 255, 136, 0.5);
+}
+
+.hover-neon {
+    transition: all var(--transition-normal);
+}
+
+.hover-neon:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(255, 0, 128, 0.4);
+    border-color: rgba(255, 0, 128, 0.5);
+}
+
+.hover-ultra {
+    transition: all var(--transition-normal);
+}
+
+.hover-ultra:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(99, 102, 241, 0.4);
+    border-color: rgba(99, 102, 241, 0.5);
+}
+
+/* 🎨 CYBERPUNK ANIMATIONS */
+.cyber-float {
+    animation: cyberFloat 3s ease-in-out infinite;
+}
+
+@keyframes cyberFloat {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+.neon-bounce {
+    animation: neonBounce 2s ease-in-out infinite;
+}
+
+@keyframes neonBounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.ultra-spin {
+    animation: ultraSpin 4s linear infinite;
+}
+
+@keyframes ultraSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 🎯 ULTRA-LOADING ANIMATIONS */
+.loading-cyber {
+    display: inline-flex;
+    gap: 4px;
+}
+
+.loading-cyber span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--text-cyber);
+    animation: cyberDots 1.4s infinite ease-in-out;
+}
+
+.loading-cyber span:nth-child(1) { animation-delay: -0.32s; }
+.loading-cyber span:nth-child(2) { animation-delay: -0.16s; }
+.loading-cyber span:nth-child(3) { animation-delay: 0s; }
+
+@keyframes cyberDots {
+    0%, 80%, 100% { 
+        transform: scale(0.8); 
+        opacity: 0.5; 
+        box-shadow: 0 0 5px var(--text-cyber);
+    }
+    40% { 
+        transform: scale(1); 
+        opacity: 1; 
+        box-shadow: 0 0 15px var(--text-cyber);
+    }
+}
+
+.loading-neon {
+    display: inline-flex;
+    gap: 4px;
+}
+
+.loading-neon span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ff0080;
+    animation: neonDots 1.4s infinite ease-in-out;
+}
+
+.loading-neon span:nth-child(1) { animation-delay: -0.32s; }
+.loading-neon span:nth-child(2) { animation-delay: -0.16s; }
+.loading-neon span:nth-child(3) { animation-delay: 0s; }
+
+@keyframes neonDots {
+    0%, 80%, 100% { 
+        transform: scale(0.8); 
+        opacity: 0.5; 
+        box-shadow: 0 0 5px #ff0080;
+    }
+    40% { 
+        transform: scale(1); 
+        opacity: 1; 
+        box-shadow: 0 0 15px #ff0080;
+    }
+}
+
+/* 🎨 ULTRA-PROGRESS BARS */
+.progress-cyber {
+    width: 100%;
+    height: 8px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.progress-cyber-fill {
+    height: 100%;
+    background: var(--gradient-cyber);
+    border-radius: var(--radius-sm);
+    transition: width var(--transition-slow);
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.progress-cyber-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: progressShine 2s infinite;
+}
+
+@keyframes progressShine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* 🎭 ULTRA-TOAST NOTIFICATIONS */
+.toast-cyber {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--bg-glass);
+    backdrop-filter: blur(30px);
+    color: var(--text-primary);
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    animation: slideInRight 0.3s ease;
+}
+
+.toast-cyber::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-cyber);
+    animation: scan 2s linear infinite;
+}
+
+.toast-neon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--bg-glass);
+    backdrop-filter: blur(30px);
+    color: var(--text-primary);
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    border: 1px solid rgba(255, 0, 128, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    animation: slideInRight 0.3s ease;
+}
+
+.toast-neon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-neon);
+    animation: scan 1.5s linear infinite;
+}
+
+/* 🎨 CYBERPUNK THEME VARIATIONS */
+.theme-cyberpunk {
+    --primary: #00ff88;
+    --primary-dark: #00cc6a;
+    --primary-light: #33ffaa;
+    --text-cyber: #00ff88;
+    --gradient-primary: linear-gradient(135deg, #00ff88, #00d4ff, #8b5cf6);
+    --gradient-cyber: linear-gradient(135deg, #00ff88, #00d4ff, #8b5cf6);
+}
+
+.theme-neon {
+    --primary: #ff0080;
+    --primary-dark: #cc0066;
+    --primary-light: #ff3399;
+    --text-cyber: #ff0080;
+    --gradient-primary: linear-gradient(135deg, #ff0080, #00ff80, #8000ff);
+    --gradient-neon: linear-gradient(135deg, #ff0080, #00ff80, #8000ff);
+}
+
+.theme-ultra {
+    --primary: #8b5cf6;
+    --primary-dark: #7c3aed;
+    --primary-light: #a78bfa;
+    --text-cyber: #8b5cf6;
+    --gradient-primary: linear-gradient(135deg, #8b5cf6, #06b6d4, #10b981);
+    --gradient-ultra: linear-gradient(135deg, #8b5cf6, #06b6d4, #10b981);
+}
+
+/* 🎯 ULTRA-ACCESSIBILITY */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.focus-visible:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+}
+
+/* 🎨 ULTRA-PRINT STYLES */
+@media print {
+    .navbar,
+    .nav-actions,
+    .btn,
+    .toast,
+    .glass,
+    .glass-ultra {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .cyber-text,
+    .neon-text,
+    .rainbow-text {
+        color: black !important;
+        text-shadow: none !important;
+    }
+}
+
+/* 🎭 CYBERPUNK SCAN LINES */
+.scan-lines {
+    position: relative;
+    overflow: hidden;
+}
+
+.scan-lines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        transparent 0%,
+        rgba(0, 255, 136, 0.03) 50%,
+        transparent 100%
+    );
+    background-size: 100% 4px;
+    animation: scanLines 2s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes scanLines {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+}
+
+/* 🎨 ULTRA-GRID PATTERNS */
+.grid-pattern {
+    background-image: 
+        linear-gradient(rgba(0, 255, 136, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 136, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.hex-pattern {
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.1) 2px, transparent 2px);
+    background-size: 30px 30px;
+}
+
+/* 🎯 ULTRA-PARTICLE EFFECTS */
+.particles {
+    position: relative;
+    overflow: hidden;
+}
+
+.particles::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, rgba(0, 255, 136, 0.3), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(99, 102, 241, 0.3), transparent),
+        radial-gradient(1px 1px at 90px 40px, rgba(255, 0, 128, 0.3), transparent),
+        radial-gradient(1px 1px at 130px 80px, rgba(6, 182, 212, 0.3), transparent);
+    background-repeat: repeat;
+    background-size: 150px 150px;
+    animation: particles 20s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes particles {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-150px); }
+}
