@@ -55,4 +55,4 @@ mvnw.cmd
 *.new
 
 #Firebase
-firebase-service-account.json
+/src/main/resources/firebase-service-account.json
