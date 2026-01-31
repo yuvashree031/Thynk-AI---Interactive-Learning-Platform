@@ -10,8 +10,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.InputStream;
+
 
 @Configuration
 public class FirebaseConfig {
@@ -19,17 +20,18 @@ public class FirebaseConfig {
     @PostConstruct
     public void init() {
         try {
-            InputStream serviceAccount = getClass()
-                    .getClassLoader()
-                    .getResourceAsStream("firebase-service-account.json");
+            // InputStream serviceAccount = getClass()
+            //         .getClassLoader()
+            //         .getResourceAsStream("firebase-service-account.json");
+            String serviceAccount = System.getenv("FIREBASE_SERVICE_ACCOUNT");
 
             if (serviceAccount == null) {
                 throw new IllegalStateException(
-                        "firebase-service-account.json not found in classpath");
+                        "FIREBASE_SERVICE_ACCOUNT Env not found in Render Environment");
             }
 
             FirebaseOptions options = FirebaseOptions.builder()
-                    .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+                    .setCredentials(GoogleCredentials.fromStream(new ByteArrayInputStream(serviceAccount.getBytes())))
                     .build();
 
             if (FirebaseApp.getApps().isEmpty()) {

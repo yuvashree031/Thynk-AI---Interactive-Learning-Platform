@@ -40,6 +40,7 @@
     <dependencies>
 
         <!-- ================= SPRING BOOT CORE ================= -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -67,6 +68,7 @@
         </dependency>
 
         <!-- ================= JSP SUPPORT ================= -->
+
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
@@ -99,6 +101,7 @@
         </dependency>
 
         <!-- ================= DATABASE ================= -->
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -106,6 +109,7 @@
         </dependency>
 
         <!-- ================= JSON ================= -->
+
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
@@ -118,6 +122,7 @@
         </dependency>
 
         <!-- ================= FIREBASE ================= -->
+
         <dependency>
             <groupId>com.google.firebase</groupId>
             <artifactId>firebase-admin</artifactId>
@@ -125,6 +130,7 @@
         </dependency>
 
         <!-- ================= AMAZON S3 (REQUIRED) ================= -->
+
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>s3</artifactId>
@@ -136,6 +142,7 @@
         </dependency>
 
         <!-- ================= PDF PROCESSING ================= -->
+
         <dependency>
             <groupId>org.apache.pdfbox</groupId>
             <artifactId>pdfbox</artifactId>
@@ -143,12 +150,14 @@
         </dependency>
 
         <!-- ================= HTTP CLIENT ================= -->
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webflux</artifactId>
         </dependency>
 
         <!-- ================= SPRING AI ================= -->
+
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-core</artifactId>
@@ -162,6 +171,7 @@
         </dependency>
 
         <!-- ================= DEV TOOLS ================= -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -170,6 +180,7 @@
         </dependency>
 
         <!-- ================= LOMBOK ================= -->
+        
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
