@@ -1,3 +1,5 @@
+import java.util.*;
+
 package com.ailearning.model;
 
 import jakarta.persistence.*;
