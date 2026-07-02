@@ -1,6 +1,5 @@
 package com.ailearning.service;
 
-//import
 import com.ailearning.model.Quiz;
 import org.json.JSONArray;
 import org.json.JSONObject;
