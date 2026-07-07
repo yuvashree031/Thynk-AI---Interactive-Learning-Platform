@@ -1,5 +1,5 @@
 import java.util.*;
-//config
+
 package com.ailearning.model;
 
 import jakarta.persistence.*;
