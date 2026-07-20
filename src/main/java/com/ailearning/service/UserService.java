@@ -1,5 +1,5 @@
 package com.ailearning.service;
-2
+
 import com.ailearning.model.User;
 import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
